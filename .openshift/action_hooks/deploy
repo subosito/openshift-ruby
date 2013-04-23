@@ -1,0 +1,10 @@
+# rbenv
+source $OPENSHIFT_DATA_DIR/rbenv-init.sh
+
+# application dir
+cd $OPENSHIFT_REPO_DIR
+
+# bundle
+ln -sf $OPENSHIFT_DATA_DIR/bundle vendor/bundle
+bundle install
+

@@ -1,0 +1,5 @@
+BUNDLE_DIR="${OPENSHIFT_DATA_DIR}bundle"
+
+if [ ! -d $BUNDLE_DIR ]; then
+  mkdir $BUNDLE_DIR
+fi
