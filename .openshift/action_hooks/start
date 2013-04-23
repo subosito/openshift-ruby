@@ -1,0 +1,8 @@
+source $OPENSHIFT_DATA_DIR/rbenv-init.sh
+
+cd $OPENSHIFT_REPO_DIR
+
+bundle exec thin \
+  -a $OPENSHIFT_INTERNAL_IP \
+  -p $OPENSHIFT_INTERNAL_PORT \
+  start
