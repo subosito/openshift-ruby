@@ -37,12 +37,14 @@ In order to make Openshift support Ruby 2.0, we need to set the working environm
 
         OpenShift Client Tools (RHC) Setup Wizard
 
-        This wizard will help you upload your SSH keys, set your application namespace, and check that other programs like Git are properly installed.
+        This wizard will help you upload your SSH keys, set your application namespace,
+        and check that other programs like Git are properly installed.
 
         Using [email] to login to openshift.redhat.com
         Password: ************
 
-        OpenShift can create and store a token on disk which allows to you to access the server without using your password. The key is stored in your home directory and should be kept secret.
+        OpenShift can create and store a token on disk which allows to you to access the server without using your password.
+        The key is stored in your home directory and should be kept secret.
         You can delete the key at any time by running 'rhc logout'.
 
         Generate a token now? (yes|no) yes
@@ -51,7 +53,9 @@ In order to make Openshift support Ruby 2.0, we need to set the working environm
         Saving configuration to /home/subosito/.openshift/express.conf ... done
 
         Your public SSH key must be uploaded to the OpenShift server to access code.  Upload now? (yes|no) yes
-        Since you do not have any keys associated with your OpenShift account, your new key will be uploaded as the 'default' key.
+        Since you do not have any keys associated with your OpenShift account,
+        your new key will be uploaded as the 'default' key.
+
         Uploading key 'default' ... done
 
         Checking for git ... found git version 1.8.2.1
@@ -118,7 +122,9 @@ In order to make Openshift support Ruby 2.0, we need to set the working environm
 
         RESULT:
         Application ruby was created.
-        Disclaimer: This is an experimental cartridge that provides a way to try unsupported languages, frameworks, and middleware on Openshift.
+
+        Disclaimer: This is an experimental cartridge that provides a way to try unsupported languages, frameworks,
+        and middleware on Openshift.
 
 
 ### 04. Installing ruby
