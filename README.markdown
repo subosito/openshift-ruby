@@ -179,4 +179,9 @@ _Because of installing ruby takes minutes to complete, I usually run it inside t
         Done installing documentation for bundler (34 sec).
         1 gem installed
 
+### Deployment
+
+After making changes and committing to the local repository, you can then pushing the changes to the openshift repository.
+
+    % git push origin master
 
