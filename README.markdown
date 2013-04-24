@@ -184,4 +184,28 @@ _Because of installing ruby takes minutes to complete, I usually run it inside t
 After making changes and committing to the local repository, you can then pushing the changes to the openshift repository.
 
     % git push origin master
+        Counting objects: 5, done.
+        Delta compression using up to 4 threads.
+        Compressing objects: 100% (3/3), done.
+        Writing objects: 100% (3/3), 428 bytes, done.
+        Total 3 (delta 2), reused 0 (delta 0)
+        remote: restart_on_add=false
+        remote: Done
+        remote: restart_on_add=false
+        remote: Running .openshift/action_hooks/build
+        remote: Running .openshift/action_hooks/deploy
+        remote: Fetching gem metadata from https://rubygems.org/..........
+        remote: Fetching gem metadata from https://rubygems.org/..
+        remote: Using daemons (1.1.9)
+        remote: Using eventmachine (1.0.3)
+        remote: Using rack (1.5.2)
+        remote: Installing rack-protection (1.5.0)
+        remote: Installing tilt (1.3.7)
+        remote: Installing sinatra (1.4.2)
+        remote: Installing thin (1.5.1)
+        remote: Using bundler (1.3.5)
+        remote: Your bundle is complete!
+        remote: Gems in the groups test and development were not installed.
+        remote: It was installed into ./vendor/bundle
+        remote: hot_deploy_added=false
 
