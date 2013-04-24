@@ -201,20 +201,24 @@ After making changes and committing to the local repository, you can then pushin
     % git push origin master
         Counting objects: 9, done.
         Delta compression using up to 4 threads.
-        Compressing objects: 100% (4/4), done.
-        Writing objects: 100% (5/5), 418 bytes, done.
-        Total 5 (delta 3), reused 0 (delta 0)
+        Compressing objects: 100% (5/5), done.
+        Writing objects: 100% (5/5), 770 bytes, done.
+        Total 5 (delta 2), reused 0 (delta 0)
         remote: restart_on_add=false
         remote: Done
         remote: restart_on_add=false
         remote: Running .openshift/action_hooks/build
         remote: Running .openshift/action_hooks/deploy
+        remote: Fetching gem metadata from https://rubygems.org/..........
+        remote: Fetching gem metadata from https://rubygems.org/..
         remote: Using daemons (1.1.9)
         remote: Using eventmachine (1.0.3)
         remote: Using rack (1.5.2)
         remote: Using rack-protection (1.5.0)
         remote: Using tilt (1.3.7)
         remote: Using sinatra (1.4.2)
+        remote: Installing temple (0.6.4)
+        remote: Installing slim (1.3.8)
         remote: Using thin (1.5.1)
         remote: Using bundler (1.3.5)
         remote: Your bundle is complete!
@@ -223,7 +227,7 @@ After making changes and committing to the local repository, you can then pushin
         remote: hot_deploy_added=false
         remote: Done
         To ssh://517731fa500446288b00004a@ruby-codecase.rhcloud.com/~/git/ruby.git/
-        dc50601..2703cf2  master -> master
+        b8c4fa6..fa06f24  master -> master
 
 We can check status of the application using Openshift client:
 
