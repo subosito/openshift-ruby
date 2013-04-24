@@ -5,3 +5,4 @@ cd $OPENSHIFT_REPO_DIR
 bundle exec thin -d \
   -a $OPENSHIFT_INTERNAL_IP \
   -p $OPENSHIFT_INTERNAL_PORT \
+  start
