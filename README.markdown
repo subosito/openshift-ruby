@@ -184,28 +184,33 @@ _Because of installing ruby takes minutes to complete, I usually run it inside t
 After making changes and committing to the local repository, you can then pushing the changes to the openshift repository.
 
     % git push origin master
-        Counting objects: 5, done.
+        Counting objects: 9, done.
         Delta compression using up to 4 threads.
-        Compressing objects: 100% (3/3), done.
-        Writing objects: 100% (3/3), 428 bytes, done.
-        Total 3 (delta 2), reused 0 (delta 0)
+        Compressing objects: 100% (4/4), done.
+        Writing objects: 100% (5/5), 418 bytes, done.
+        Total 5 (delta 3), reused 0 (delta 0)
         remote: restart_on_add=false
         remote: Done
         remote: restart_on_add=false
         remote: Running .openshift/action_hooks/build
         remote: Running .openshift/action_hooks/deploy
-        remote: Fetching gem metadata from https://rubygems.org/..........
-        remote: Fetching gem metadata from https://rubygems.org/..
         remote: Using daemons (1.1.9)
         remote: Using eventmachine (1.0.3)
         remote: Using rack (1.5.2)
-        remote: Installing rack-protection (1.5.0)
-        remote: Installing tilt (1.3.7)
-        remote: Installing sinatra (1.4.2)
-        remote: Installing thin (1.5.1)
+        remote: Using rack-protection (1.5.0)
+        remote: Using tilt (1.3.7)
+        remote: Using sinatra (1.4.2)
+        remote: Using thin (1.5.1)
         remote: Using bundler (1.3.5)
         remote: Your bundle is complete!
         remote: Gems in the groups test and development were not installed.
         remote: It was installed into ./vendor/bundle
         remote: hot_deploy_added=false
+        remote: Done
+        To ssh://517731fa500446288b00004a@ruby-codecase.rhcloud.com/~/git/ruby.git/
+        dc50601..2703cf2  master -> master
+
+
+    % rhc app show ruby --state
+        Cartridge diy-0.1 is started
 
