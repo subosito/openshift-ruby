@@ -14,9 +14,11 @@ http://ruby-codecase.rhcloud.com/
 - [Sinatra](http://www.sinatrarb.com/)
 - [Thin](http://code.macournoyer.com/thin/)
 
-## Step by step
+## Step by Step
 
-### Installing Openshift client
+In order to make Openshift support Ruby 2.0, we need to set the working environment, here's how:
+
+### 01. Installing Openshift client
 
     % gem install rhc
 
@@ -28,6 +30,8 @@ http://ruby-codecase.rhcloud.com/
         Successfully installed rhc-1.7.8
         Done installing documentation for rhc (0 sec).
         1 gem installed
+
+### 02. Setup Openshift client
 
     % rhc setup
 
@@ -78,6 +82,8 @@ http://ruby-codecase.rhcloud.com/
 
         Your client tools are now configured.
 
+### 03. Create Openshift DIY application
+
     % rhc app create ruby diy-0.1 --from-code git://github.com/codecase/openshift-ruby.git
 
         Application Options
@@ -115,7 +121,9 @@ http://ruby-codecase.rhcloud.com/
         Disclaimer: This is an experimental cartridge that provides a way to try unsupported languages, frameworks, and middleware on Openshift.
 
 
-### Installing ruby
+### 04. Installing ruby
+
+We need to log in into Openshift box to install ruby. You can issue `ssh` command.
 
     % ssh 517731fa500446288b00004a@ruby-codecase.rhcloud.com
 
@@ -179,7 +187,7 @@ _Because of installing ruby takes minutes to complete, I usually run it inside t
         Done installing documentation for bundler (34 sec).
         1 gem installed
 
-### Deployment
+### 05. Deployment
 
 After making changes and committing to the local repository, you can then pushing the changes to the openshift repository.
 
@@ -210,6 +218,7 @@ After making changes and committing to the local repository, you can then pushin
         To ssh://517731fa500446288b00004a@ruby-codecase.rhcloud.com/~/git/ruby.git/
         dc50601..2703cf2  master -> master
 
+We can check status of the application using Openshift client:
 
     % rhc app show ruby --state
         Cartridge diy-0.1 is started
