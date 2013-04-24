@@ -13,6 +13,7 @@ http://ruby-codecase.rhcloud.com/
 - [Rbenv](https://github.com/sstephenson/rbenv)
 - [Sinatra](http://www.sinatrarb.com/)
 - [Thin](http://code.macournoyer.com/thin/)
+- [Slim](http://slim-lang.com/)
 
 ## Step by Step
 
