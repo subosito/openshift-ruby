@@ -99,7 +99,7 @@ Your client tools are now configured.
 ### 03. Create Openshift DIY application
 
 ``` bash
-% rhc app create ruby diy-0.1 --from-code git://github.com/codecase/openshift-ruby.git
+% rhc app create ruby diy-0.1 --from-code git://github.com/subosito/openshift-ruby.git
 ```
 
 ```
@@ -107,7 +107,7 @@ Application Options
 -------------------
 Namespace:   codecase
 Cartridges:  diy-0.1
-Source Code: git://github.com/codecase/openshift-ruby.git
+Source Code: git://github.com/subosito/openshift-ruby.git
 Gear Size:   default
 Scaling:     no
 

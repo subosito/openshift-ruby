@@ -2,7 +2,7 @@
 
 export RBENV_ROOT="${OPENSHIFT_DATA_DIR}.rbenv"
 export RBENV_INIT="${OPENSHIFT_DATA_DIR}rbenv-init.sh"
-export RUBY_VERSION="2.0.0-p0"
+export RUBY_VERSION="2.0.0-p353"
 
 if [ ! -d "${RBENV_ROOT}" ] ; then
 
