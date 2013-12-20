@@ -1,6 +1,6 @@
 # Openshift Ruby
 
-Installer and action hooks for Openshift Do-it-Yourself (DIY) for installing Ruby 2.0.0-p0 via Rbenv and running simple Sinatra application through Thin.
+Installer and action hooks for Openshift Do-it-Yourself (DIY) for installing Ruby 2.0.0-p353 via Rbenv and running simple Sinatra application through Thin.
 
 ## URL
 
@@ -197,10 +197,10 @@ Receiving objects: 100% (1618/1618), 233.35 KiB, done.
 .......... some outputs omitted ................
 ................................................
 
-Downloading ruby-2.0.0-p0.tar.gz...
--> http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p0.tar.gz
-Installing ruby-2.0.0-p0...
-Installed ruby-2.0.0-p0 to /var/lib/openshift/517731fa500446288b00004a/app-root/data/.rbenv/versions/2.0.0-p0
+Downloading ruby-2.0.0-p353.tar.gz...
+-> http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p353.tar.gz
+Installing ruby-2.0.0-p353...
+Installed ruby-2.0.0-p353 to /var/lib/openshift/517731fa500446288b00004a/app-root/data/.rbenv/versions/2.0.0-p353
 
 Fetching: bundler-1.3.5.gem (100%)
 Successfully installed bundler-1.3.5
