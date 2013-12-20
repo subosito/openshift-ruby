@@ -1,10 +1,11 @@
-# rbenv
-source $OPENSHIFT_DATA_DIR/rbenv-init.sh
+if [ -f $OPENSHIFT_DATA_DIR/rbenv-init.sh ]; then
+  # rbenv
+  source $OPENSHIFT_DATA_DIR/rbenv-init.sh
 
-# application dir
-cd $OPENSHIFT_REPO_DIR
+  # application dir
+  cd $OPENSHIFT_REPO_DIR
 
-# bundle
-ln -sf $OPENSHIFT_DATA_DIR/bundle vendor/bundle
-bundle install --without test development --deployment
-
+  # bundle
+  ln -sf $OPENSHIFT_DATA_DIR/bundle vendor/bundle
+  bundle install --without test development --deployment
+fi
